@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("./reset.css");
+:root {
+    /* Colors -> procurar HSL */
+
+    --brand-color-1: #4c6ef5;
+    --brand-color-2: #364fc7;
+    --grey-0: #191c1f;
+    --grey-1: #212529;
+    --grey-2: #343a40;
+    --grey-3: #adb5bd;
+    --grey-4: #ced4da;
+    --grey-5: #f8f9fa;
+
+    /* Titles */
+
+    --font-primary: "Inter";
+    --title-1-weight: 600px;
+    --title-1-fontsize: 52px;
+    --title-1-lineheight: 72px;
+    --title-2-weight: 600px;
+    --title-2-fontsize: 40px;
+    --title-2-lineheight: 64px;
+    --title-3-weight: 400px;
+    --title-3-fontsize: 32px;
+    --title-3-lineheight: 44px;
+    --text-weight: 400px;
+    --text-1-fontsize: 28px;
+    --text-1-lineheight: 44px;
+    --text-2-fontsize: 20px;
+    --text-2-lineheight: 30px;
+    --text-3-fontsize: 18px;
+    --text-3-lineheight: 27px;
+
+    /* Spacing */
+    --general-padding: 109px;
+
+    /* Border Radius*/
+    --border-radius: 8px;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--grey-5);
+}
+
+button {
+    background-color: var(--brand-color-1);
+    border: none;
+    color: var(--grey-5);
+    border-radius: var(--border-radius);
+}
+
+.small {
+    min-height: 20px;
+    min-width: 20px;
+    padding: 4px 4px;
+}
+
+.medium {
+    min-height: 50px;
+    min-width: 125px;
+    padding: 20px;
+}
+
+.large {
+    min-height: 75px;
+    min-width: 150px;
+    padding: 16px 32px;
+}
+
+button:hover {
+    background-color: var(--brand-color-2);
+    border: none;
+}
+
+input {
+    background-color: var(--grey-4);
+    width: 280px;
+    height: 48px;
+    font-size: var(--text-2-fontsize);
+    border: none;
+    border-radius: var(--border-radius);
+}
+
+input .valid {
+    background-color: var(--grey-0);
+}
+
+input .default {
+    background-color: var(--grey-2);
+}
+
+input::placeholder {
+    color: var(--grey-5);
+    padding: 5px;
+}
+
+input:focus {
+    background-color: var(--grey-3);
+    outline: solid 2px var(--brand-color-2);
+}
+
+.element::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+.element {
+    overflow: -moz-scrollbars-none;
+}
+
+.element {
+    -ms-overflow-style: none;
+}
+
+.fixed {
+    position: fixed;
+}
