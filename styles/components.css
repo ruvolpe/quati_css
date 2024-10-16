@@ -1,0 +1,58 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+}
+
+* {
+    box-sizing: inherit;
+}
+button {
+    background-color: var(--main-blue);
+    color: var(--grey-5);
+    padding: var(--space-s) var(--space-m);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: var(--text-3-fontsize);
+    font-weight: var(--title-1-weight);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--dark-blue);
+}
+
+button:active {
+    background-color: var(--purple-accent);
+}
+
+button:disabled {
+    background-color: var(--grey-3);
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+input {
+    width: 100%;
+    padding: var(--space-s) var(--space-m);
+    border: 2px solid var(--grey-3);
+    border-radius: var(--border-radius);
+    font-size: var(--text-3-fontsize);
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: var(--main-blue);
+    box-shadow: 0 0 8px var(--soft-blue);
+}
+
+input::placeholder {
+    color: var(--grey-3);
+}
